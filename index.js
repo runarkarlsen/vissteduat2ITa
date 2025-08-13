@@ -57,7 +57,7 @@ const elever = [
   "Nikolai",
   "Didrik",
   "Jack",
-  "Leon,
+  "Leon",
   "Lucas",
   "Oscar",
   "HermanF",
