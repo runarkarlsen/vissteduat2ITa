@@ -44,26 +44,30 @@ const temaer = [
   "Edge computing",
   "Internet of Things",
   "APIer",
+  "OSI modellen og TCP-IP modellen",
+  "Kunnskapsinnhenting og dokumentasjon av IT",
+  "Nyttige apper, funksjoner og innstillingert på  datamaskin",
 ];
 
 let bruktTemaer = [];
 
 const elever = [
-  "Tobias",
-  "Oskar",
-  "Lukas",
-  "Andreas",
-  "Erik",
-  "Lars",
+  "Adrians",
+  "Filip",
+  "Nikolai",
+  "Didrik",
+  "Jack",
+  "Leon,
+  "Lucas",
+  "Oscar",
+  "HermanF",
+  "Jone",
+  "Denis",
+  "HermanS",
+  "Tigra",
   "Max",
-  "Patrik",
-  "Alex",
-  "William",
-  "Damian",
-  "Gabriel",
-  "Armandas",
-  "Sofiia",
-  "Sarawut",
+  "Husen",
+  "Josias",
 ];
 
 let currentStudentIndex = 0;
