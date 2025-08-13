@@ -1,0 +1,20 @@
+/* custom-style.css */
+
+/* Left-align and center Navn and Temaer */
+#currentStudent,
+#currentTopics {
+  max-width: 300px;
+  margin: 0 auto 1rem auto;
+  text-align: left;
+}
+
+/* Style for the assign button to make it more visible */
+#assignButton {
+  border: 2px solid white;
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.6);
+  transition: box-shadow 0.3s ease;
+}
+
+#assignButton:hover {
+  box-shadow: 0 0 12px rgba(255, 255, 255, 0.9);
+}

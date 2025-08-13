@@ -1,2 +1,1 @@
-# vissteduat2ITa
-Repetisjon for 2ITa
+Trekker 3 temaer til hver elev.

@@ -1,0 +1,371 @@
+/* style.css */
+body {
+  font-family: sans-serif;
+  background-color: #1e1e1e;
+  color: #f0f0f0;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 1.5rem;
+  backdrop-filter: blur(5px);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+}
+
+main {
+  flex: 1;
+  padding: 2rem;
+  margin-top: 5rem;
+}
+
+footer {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 1rem;
+  position: relative;
+  z-index: 1;
+  backdrop-filter: blur(5px);
+  margin-top: -0.5rem;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer p {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+h1 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+button {
+  background-color: rgba(51, 51, 51, 0.8);
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 400px;
+  white-space: nowrap;
+  backdrop-filter: blur(5px);
+}
+
+button:hover {
+  background-color: rgba(68, 68, 68, 0.9);
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  font-size: 1.1rem;
+}
+
+li {
+  background-color: #2a2a2abb;
+  margin: 0.5rem auto;
+  padding: 0.75rem;
+  max-width: 500px;
+  border-radius: 6px;
+}
+
+.tema-section {
+  margin-top: 2rem;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.tema-section h2 {
+  margin-bottom: 0.5rem;
+  text-align: left;
+  padding-left: 1rem;
+}
+
+.tema-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.8rem;
+  text-align: left;
+  padding: 0.5rem;
+}
+
+.tema-grid div {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 1rem;
+  border-radius: 6px;
+  word-break: break-word;
+  backdrop-filter: blur(5px);
+}
+
+.strikethrough {
+  text-decoration: line-through;
+  color: #ff6961;
+}
+
+body {
+  background-image: url("https://images.unsplash.com/photo-1550751827-4bd374c3f58b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: relative;
+  z-index: 0;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.75); /* More transparent overlay */
+  z-index: -1;
+}
+
+/* Dialog styles */
+.dialog {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1000;
+  justify-content: center;
+  align-items: center;
+}
+
+.dialog-content {
+  background-color: rgba(42, 42, 42, 0.95);
+  padding: 2rem;
+  border-radius: 12px;
+  max-width: 400px;
+  text-align: left;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.dialog-content h3 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+.dialog-content ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.dialog-content li {
+  margin: 0.5rem 0;
+  background: none;
+  padding: 0.5rem 0;
+}
+
+.dialog-content strong {
+  color: yellow;
+}
+
+.dialog-content button {
+  margin-top: 1.5rem;
+  width: 100%;
+  background-color: #4caf50;
+}
+
+.dialog-content button:hover {
+  background-color: #45a049;
+}
+
+/* Highlight selected student and topics in yellow */
+#currentStudent h3 {
+  color: yellow;
+}
+
+#currentTopics ul li {
+  color: yellow;
+}
+
+#currentStudent .label {
+  color: white;
+}
+
+#currentStudent .name {
+  color: yellow;
+}
+
+#currentTopics ul li {
+  color: yellow;
+}
+
+/* Left-align and center Navn and Temaer */
+#currentStudent,
+#currentTopics {
+  max-width: 300px;
+  margin: 0 auto 1rem auto;
+  text-align: left;
+}
+
+/* Style for buttons */
+#assignButton,
+#printButton {
+  border: 2px solid white;
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.6);
+  transition: box-shadow 0.3s ease;
+}
+
+#assignButton:hover,
+#printButton:hover {
+  box-shadow: 0 0 12px rgba(255, 255, 255, 0.9);
+}
+
+#printButton {
+  background-color: rgba(76, 175, 80, 0.8);
+  margin-top: 0.5rem;
+}
+
+#printButton:hover {
+  background-color: rgba(69, 160, 73, 0.9);
+}
+
+/* Styles for final formatted list */
+#finalListSection {
+  margin-top: 2rem;
+  padding: 2rem;
+  background-color: rgba(42, 42, 42, 0.9);
+  border-radius: 12px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.final-list {
+  text-align: left;
+  margin: 1.5rem 0;
+  padding: 1rem;
+  background-color: rgba(30, 30, 30, 0.7);
+  border-radius: 8px;
+}
+
+.final-list h3 {
+  color: yellow;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  padding-bottom: 0.5rem;
+}
+
+.final-list ul {
+  margin-left: 1rem;
+}
+
+.final-list li {
+  background-color: transparent;
+  padding: 0.5rem;
+  margin: 0.25rem 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  body {
+    padding: 0;
+  }
+
+  header {
+    padding: 1rem;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  main {
+    padding: 1rem;
+    margin-top: 4rem;
+  }
+
+  button {
+    width: 90%;
+    padding: 0.8rem 1rem;
+    font-size: 1rem;
+  }
+
+  .tema-grid {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+    padding: 0.5rem;
+  }
+
+  .tema-grid div {
+    padding: 0.8rem;
+    font-size: 0.9rem;
+  }
+
+  #finalListSection {
+    padding: 1rem;
+    margin: 1rem;
+  }
+
+  .final-list {
+    padding: 0.5rem;
+  }
+
+  .final-list h3 {
+    font-size: 1.1rem;
+  }
+
+  .final-list li {
+    padding: 0.4rem;
+    font-size: 0.9rem;
+  }
+
+  .dialog-content {
+    margin: 1rem;
+    padding: 1rem;
+  }
+
+  footer {
+    height: auto;
+    min-height: 2.5rem;
+  }
+
+  footer p {
+    font-size: 0.9rem;
+  }
+}
+
+/* Small phones */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.2rem;
+  }
+
+  button {
+    font-size: 0.9rem;
+    padding: 0.7rem;
+  }
+
+  .tema-grid div {
+    font-size: 0.85rem;
+  }
+}

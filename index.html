@@ -1,0 +1,72 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="no">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title>Visste du at... - Tema-generator</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="index.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1>✨ Visste du at... – Tema-generator ✨</h1>
+    </header>
+
+    <main>
+      <div id="currentStudent" style="margin-bottom: 1rem"></div>
+      <div id="currentTopics" style="margin-bottom: 1rem"></div>
+
+      <button id="assignButton" onclick="assignNextStudent()">
+        Tildel 3 temaer til neste elev
+      </button>
+      <button
+        id="printButton"
+        onclick="printAssignmentList()"
+        style="display: none"
+      >
+        Skriv ut liste over elever og tema
+      </button>
+
+      <ul id="resultat"></ul>
+      <p
+        id="sluttmelding"
+        style="display: none; font-weight: bold; margin-top: 1rem"
+      >
+        Alle temaer er brukt! Trykk F5 for å starte på nytt.
+      </p>
+
+      <div class="tema-section">
+        <h2>Tilgjengelige temaer:</h2>
+        <div id="temaListe" class="tema-grid"></div>
+      </div>
+
+      <!-- Final formatted list section -->
+      <div id="finalListSection" style="display: none">
+        <h2>🎉 Oppsummering av alle tildelinger 🎉</h2>
+        <div id="finalFormattedList" class="final-list"></div>
+      </div>
+
+      <!-- Help Dialog -->
+      <div id="helpDialog" class="dialog">
+        <div class="dialog-content">
+          <h3>⌨️ Hurtigtaster</h3>
+          <ul>
+            <li>
+              <strong>Enter:</strong> Start på nytt når alle temaer er tildelt
+            </li>
+            <li><strong>F5:</strong> Start på nytt når som helst</li>
+          </ul>
+          <button onclick="closeHelpDialog()">Lukk</button>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <p>Trekk et tema-generator. &copy; RunarRights 2025 &#128512;</p>
+    </footer>
+  </body>
+</html>
