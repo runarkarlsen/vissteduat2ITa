@@ -1,1 +1,1 @@
-Trekker 3 temaer til hver elev.
+Trekker 3 temaer til hver elev i 2ITa.
